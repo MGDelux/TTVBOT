@@ -17,8 +17,6 @@ using System.Media;
 using System.Diagnostics;
 using TwitchCSharp.Clients;
 using TwitchCSharp.Models;
-
-
 namespace WindowsFormsApplication2
 {
     public partial class Form1 : Form
@@ -40,7 +38,6 @@ namespace WindowsFormsApplication2
         bool commandspamfilter = false;
         bool commandspamfilterx = false;
         bool commandspamfiltery = false;
-
         public bool bannedsitebool = true;
         List<CommandSpamUserx> CommandSpamUserx = new List<CommandSpamUserx>();
         List<CommandSpamUsery> CommandSpamUsery = new List<CommandSpamUsery>();
@@ -48,7 +45,7 @@ namespace WindowsFormsApplication2
 
         Inifile PointsIni = new Inifile(@"C:\Users\Deluxdumb\Videos\mybot-20170311T223230Z-001\mybot\WindowsFormsApplication2\points.ini");
         #endregion
-
+	
         public Form1()
         {
             InitializeComponent();
@@ -58,8 +55,7 @@ namespace WindowsFormsApplication2
             Spamfilter.Start();
             Spamfilterx.Start();
             ChatBox.Text = "Bot started @" + DateTime.Now + Environment.NewLine +  "Connected to: " + Properties.Settings.Default.channel;
-
-
+	    
             label3.Text = Properties.Settings.Default.timeout;
             irc.joinroom(Properties.Settings.Default.channel);
             chatthread = new Thread(getmsg);
