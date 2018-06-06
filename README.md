@@ -3,13 +3,20 @@ a bot that manages multiple users stats over twitch and discord.
 C# DCB 2.4 - TTVB 1.4
 
 *Current features:
- *Custom Ranks.
+ *Custom Users Ranks.
+ 
   *Raids.
+  
    *Shop.
-    *Player factions.
+   
+    *User factions.
+    
      *Give-away function.
+     
       *Twitch Sub bonuses
+      
        *Admin access from discord, twitch.
+       
 
 *Todo:
 *Leaderboards.
